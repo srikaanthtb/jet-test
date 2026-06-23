@@ -9,3 +9,5 @@ node_modules
 .env.production.local
 .DS_Store
 target
+events.json:Zone.Identifier
+id-mapping.json:Zone.Identifier

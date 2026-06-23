@@ -1,0 +1,212 @@
+[
+  {
+    "eventId": "ee76ce34-85a8-4ec4-93d1-4aea71275dbe",
+    "type": "CourierRegistered",
+    "courierId": "SC-1001",
+    "timestamp": "2026-06-15T09:00:00Z",
+    "data": {
+      "name": "Lena Brandt",
+      "city": "Berlin",
+      "vehicle": "ebike"
+    }
+  },
+  {
+    "eventId": "5ed8062d-467f-4c42-b4a0-c308ecf30488",
+    "type": "CourierRegistered",
+    "courierId": "SC-1002",
+    "timestamp": "2026-06-15T09:05:00Z",
+    "data": {
+      "name": "Tomás Ferreira",
+      "city": "Berlin",
+      "vehicle": "bike"
+    }
+  },
+  {
+    "eventId": "df48d18c-5a0d-4de3-9fc9-b00aa7111be8",
+    "type": "CourierProfileUpdated",
+    "courierId": "GC-9005",
+    "timestamp": "2026-06-15T14:00:00Z",
+    "data": {
+      "city": "Munich"
+    }
+  },
+  {
+    "eventId": "a09e55c3-a088-4229-90af-2138cb0cd910",
+    "type": "OnboardingStatusChanged",
+    "courierId": "GC-9002",
+    "timestamp": "2026-06-15T13:00:00Z",
+    "data": {
+      "status": "verified"
+    }
+  },
+  {
+    "eventId": "ee36c6b9-55aa-46a7-a553-98ee2d2d683f",
+    "type": "CourierRegistered",
+    "courierId": "SC-1005",
+    "timestamp": "2026-06-15T08:30:00Z",
+    "data": {
+      "name": "Sofia Russo",
+      "city": "Hamburg",
+      "vehicle": "ebike"
+    }
+  },
+  {
+    "eventId": "da150d5f-9eec-4db8-a36b-e1ae4b83bda7",
+    "type": "CourierProfileUpdated",
+    "courierId": "GC-9005",
+    "timestamp": "2026-06-15T12:00:00Z",
+    "data": {
+      "city": "Hamburg"
+    }
+  },
+  {
+    "eventId": "4eb52f59-fe18-49f2-8d3c-9adca9c90a91",
+    "type": "OnboardingStatusChanged",
+    "courierId": "SC-1002",
+    "timestamp": "2026-06-15T15:00:00Z",
+    "data": {
+      "status": "pending"
+    }
+  },
+  {
+    "eventId": "f6bdd03b-7128-474d-ae5f-be0d2713615a",
+    "type": "CourierRegistered",
+    "courierId": "SC-1003",
+    "timestamp": "2026-06-15T09:10:00Z",
+    "data": {
+      "name": "Yusuf Demir",
+      "city": "Berlin",
+      "vehicle": "scooter"
+    }
+  },
+  {
+    "eventId": "5bbfe06b-a325-4434-9541-bb26990382db",
+    "type": "OnboardingStatusChanged",
+    "courierId": "GC-9001",
+    "timestamp": "2026-06-15T10:00:00Z",
+    "data": {
+      "status": "verified"
+    }
+  },
+  {
+    "eventId": "9d6ddd78-3d32-4896-b006-2733922f2aa5",
+    "type": "CourierProfileUpdated",
+    "courierId": "SC-1001",
+    "timestamp": "2026-06-15T11:30:00Z",
+    "data": {
+      "vehicle": "bike"
+    }
+  },
+  {
+    "eventId": "f1bdcf25-8076-4f84-8ffc-6252311fd2d8",
+    "type": "CourierRegistered",
+    "courierId": "GC-9003",
+    "timestamp": "2026-06-15T09:20:00Z",
+    "data": {
+      "name": "Amara Okafor",
+      "city": "Berlin",
+      "vehicle": "bike"
+    }
+  },
+  {
+    "eventId": "70a72dc9-2e5d-4c08-b611-27953e0608f3",
+    "type": "OnboardingStatusChanged",
+    "courierId": "GC-9003",
+    "timestamp": "2026-06-15T09:30:00Z",
+    "data": {
+      "status": "verified"
+    }
+  },
+  {
+    "eventId": "78a22669-4a7f-4c3e-b224-b2db3503b117",
+    "type": "OnboardingStatusChanged",
+    "courierId": "SC-1003",
+    "timestamp": "2026-06-15T09:40:00Z",
+    "data": {
+      "status": "verified"
+    }
+  },
+  {
+    "eventId": "b263d671-5bf1-409a-b555-9267727d91ea",
+    "type": "CourierRegistered",
+    "courierId": "SC-1004",
+    "timestamp": "2026-06-15T08:00:00Z",
+    "data": {
+      "name": "Jonas Keller",
+      "city": "Hamburg",
+      "vehicle": "car"
+    }
+  },
+  {
+    "eventId": "f3a816a0-3e4a-4bd1-97c2-5798b6f2bb82",
+    "type": "OnboardingStatusChanged",
+    "courierId": "GC-9004",
+    "timestamp": "2026-06-15T08:30:00Z",
+    "data": {
+      "status": "verified"
+    }
+  },
+  {
+    "eventId": "1ab00eec-a8eb-4ccf-8b40-5116faba559b",
+    "type": "CourierDeactivated",
+    "courierId": "GC-9004",
+    "timestamp": "2026-06-15T16:00:00Z",
+    "data": {
+      "reason": "left platform"
+    }
+  },
+  {
+    "eventId": "03027304-f692-4459-8fde-7b5d7473dc62",
+    "type": "OnboardingStatusChanged",
+    "courierId": "GC-9005",
+    "timestamp": "2026-06-15T09:00:00Z",
+    "data": {
+      "status": "verified"
+    }
+  },
+  {
+    "eventId": "df48d18c-5a0d-4de3-9fc9-b00aa7111be8",
+    "type": "CourierProfileUpdated",
+    "courierId": "GC-9005",
+    "timestamp": "2026-06-15T14:00:00Z",
+    "data": {
+      "city": "Munich"
+    }
+  },
+  {
+    "eventId": "8c3a5dd8-a9fb-4a67-9eee-ee431871c5a2",
+    "type": "CourierProfileUpdated",
+    "courierId": "SC-1002",
+    "timestamp": "2026-06-15T16:00:00Z",
+    "data": {
+      "phone": "+49 30 5550102"
+    }
+  },
+  {
+    "eventId": "cc9a2adb-ec40-4b02-aed1-1a0d3995011f",
+    "type": "CourierProfileUpdated",
+    "courierId": "SC-1001",
+    "timestamp": "2026-06-15T12:15:00Z",
+    "data": {
+      "phone": "+49 30 5550101"
+    }
+  },
+  {
+    "eventId": "4eb52f59-fe18-49f2-8d3c-9adca9c90a91",
+    "type": "OnboardingStatusChanged",
+    "courierId": "SC-1002",
+    "timestamp": "2026-06-15T15:00:00Z",
+    "data": {
+      "status": "pending"
+    }
+  },
+  {
+    "eventId": "bc7d7a98-4bac-4346-84f1-02ba550bfb35",
+    "type": "CourierProfileUpdated",
+    "courierId": "GC-9001",
+    "timestamp": "2026-06-15T13:45:00Z",
+    "data": {
+      "city": "Potsdam"
+    }
+  }
+]
