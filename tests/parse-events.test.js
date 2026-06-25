@@ -20,7 +20,7 @@ test('each event has required fields', () => {
 
 test('each profile has required fields', () => {
   const result = reconcileEvents(events, idMapping);
-  result.forEach(profile => {
+  Object.values(result).forEach(profile => {
     expect(profile).toHaveProperty('employeeId');
     expect(profile).toHaveProperty('globalCourierId');
     expect(profile).toHaveProperty('name');
