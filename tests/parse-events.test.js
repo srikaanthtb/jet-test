@@ -20,13 +20,14 @@ test('each event has required fields', () => {
 
 test('each profile has required fields', () => {
   const result = reconcileEvents(events, idMapping);
-  Object.values(result).forEach(profile => {
+  result.forEach(profile => {
     expect(profile).toHaveProperty('employeeId');
     expect(profile).toHaveProperty('globalCourierId');
     expect(profile).toHaveProperty('name');
     expect(profile).toHaveProperty('city');
     expect(profile).toHaveProperty('vehicle');
-    expect(profile).toHaveProperty('status');
+    expect(profile).toHaveProperty('onboardingStatus');
+    expect(profile).toHaveProperty('active');
   });
 });
 
@@ -55,22 +56,24 @@ test('event processing: registration and updates', () => {
     },
     {
       eventId: 'test-3',
-      type: 'CourierStatusUpdated',
+      type: 'OnboardingStatusChanged',
       courierId: 'SC-9999',
       timestamp: '2026-06-15T11:00:00Z',
       data: {
-        status: 'inactive'
+        status: 'verified'
       }
     }
   ];
   const testIdMapping = { 'SC-9999': 'GC-9999' };
   const result = reconcileEvents(testEvents, testIdMapping);
   
-  expect(result['SC-9999']).toBeDefined();
-  expect(result['SC-9999'].employeeId).toBe('SC-9999');
-  expect(result['SC-9999'].globalCourierId).toBe('GC-9999');
-  expect(result['SC-9999'].name).toBe('Test Courier');
-  expect(result['SC-9999'].city).toBe('Munich');
-  expect(result['SC-9999'].vehicle).toBe('ebike');
-  expect(result['SC-9999'].status).toBe('inactive');
+  expect(result.length).toBeGreaterThan(0);
+  const profile = result[0];
+  expect(profile.employeeId).toBe('SC-9999');
+  expect(profile.globalCourierId).toBe('GC-9999');
+  expect(profile.name).toBe('Test Courier');
+  expect(profile.city).toBe('Munich');
+  expect(profile.vehicle).toBe('ebike');
+  expect(profile.onboardingStatus).toBe('verified');
+  expect(profile.active).toBe(true);
 });
