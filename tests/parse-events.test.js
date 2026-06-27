@@ -43,7 +43,6 @@ test('each profile has required fields', () => {
   });
 });
 
-
 test('latest timestamp wins for city field', () => {
   // GC-9005 has two CourierProfileUpdated events for city:
   // 12:00:00Z -> Hamburg
@@ -123,4 +122,3 @@ test('event processing: registration and updates', () => {
   expect(profile.onboardingStatus).toBe('verified');
   expect(profile.active).toBe(true);
 });
-
