@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Brand colors (Cobalt/Indigo based on Seed 164) */
+  --primary: oklch(0.55 0.105 230);
+  --primary-hover: oklch(0.48 0.105 230);
+  --primary-light: oklch(0.92 0.02 230);
+
+  /* Neutrals (Fog-tinted harbor neutrals) */
+  --bg-app: oklch(0.985 0.003 230);
+  --bg-content: oklch(1 0 0);
+  --surface: oklch(1 0 0);
+  --surface-hover: oklch(0.98 0.004 230);
+  
+  --ink: oklch(0.25 0.015 230);
+  --ink-headings: oklch(0.18 0.02 230);
+  --muted: oklch(0.5 0.012 230);
+  --border: oklch(0.91 0.008 230);
+
+  /* Accent (Amber/copper dawn) */
+  --accent: oklch(0.68 0.12 65);
+  --accent-light: oklch(0.94 0.03 65);
+  --accent-ink: oklch(0.35 0.06 65);
+
+  /* Semantic status colors (Perceptually contrast-safe) */
+  --status-success-bg: oklch(0.93 0.04 145);
+  --status-success-text: oklch(0.32 0.06 145);
+  
+  --status-warning-bg: oklch(0.94 0.04 75);
+  --status-warning-text: oklch(0.35 0.06 75);
+  
+  --status-danger-bg: oklch(0.93 0.025 25);
+  --status-danger-text: oklch(0.38 0.05 25);
+}
+

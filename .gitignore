@@ -11,3 +11,5 @@ node_modules
 target
 events.json:Zone.Identifier
 id-mapping.json:Zone.Identifier
+.cursor
+.impeccable

@@ -28,3 +28,15 @@ test('GET /couriers/:id with invalid id returns 404', async () => {
   expect(response.status).toBe(404);
   expect(response.body).toHaveProperty('error');
 });
+
+test('GET /couriers/:id with lowercase employeeId returns courier', async () => {
+  const response = await request(app).get('/couriers/sc-1001');
+  expect(response.status).toBe(200);
+  expect(response.body).toHaveProperty('employeeId', 'SC-1001');
+});
+
+test('GET /couriers/:id with lowercase globalCourierId returns courier', async () => {
+  const response = await request(app).get('/couriers/gc-9001');
+  expect(response.status).toBe(200);
+  expect(response.body).toHaveProperty('globalCourierId', 'GC-9001');
+});

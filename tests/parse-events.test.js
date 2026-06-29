@@ -76,6 +76,7 @@ test('courier with only globalCourierId is included', () => {
   expect(gc9003.name).toBe('Amara Okafor');
 });
 
+//same test again but with mock data
 test('event processing: registration and updates', () => {
   const testEvents = [
     {

@@ -11,7 +11,8 @@ router.get('/', function(req, res, next) {
 router.get('/:id', function(req, res, next) {
   const id = req.params.id;
   const courier = reconciledProfiles.find(p => 
-    p.employeeId === id || p.globalCourierId === id
+    p.employeeId?.toLowerCase() === id.toLowerCase() || 
+    p.globalCourierId?.toLowerCase() === id.toLowerCase()
   );
   
   if (!courier) {

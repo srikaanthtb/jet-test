@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "test": "jest"
+    "test": "jest",
+    "build:client": "cd client && npm run build"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
