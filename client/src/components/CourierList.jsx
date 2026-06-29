@@ -257,110 +257,7 @@ function CourierList() {
                   flex-shrink: 0;
                 }
               }
-              @scope ([data-impeccable-variant="2"]) {
-                :scope > .imp-vt2 {
-                  display: inline-flex;
-                  gap: 0;
-                  background: transparent;
-                  border: none;
-                  padding: 0;
-                }
-                :scope > .imp-vt2 .imp-vt2-btn {
-                  display: flex;
-                  flex-direction: column;
-                  align-items: center;
-                  gap: calc(var(--p-density, 1) * 3px);
-                  padding: calc(var(--p-density, 1) * 4px) calc(var(--p-density, 1) * 10px) calc(var(--p-density, 1) * 6px);
-                  border: none;
-                  background: transparent;
-                  cursor: pointer;
-                  position: relative;
-                  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
-                }
-                :scope > .imp-vt2 .imp-vt2-btn svg {
-                  width: 15px;
-                  height: 15px;
-                  color: oklch(0.5 0.012 230);
-                  transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1);
-                }
-                :scope > .imp-vt2 .imp-vt2-btn .imp-vt2-lbl {
-                  font-family: Inter, system-ui, sans-serif;
-                  font-size: 9px;
-                  font-weight: 600;
-                  letter-spacing: 0.02em;
-                  color: oklch(0.5 0.012 230);
-                  transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1);
-                }
-                :scope > .imp-vt2 .imp-vt2-btn::after {
-                  content: '';
-                  position: absolute;
-                  bottom: 0;
-                  left: 25%;
-                  right: 25%;
-                  height: 2px;
-                  border-radius: 1px;
-                  background: transparent;
-                  transition: background 150ms cubic-bezier(0.4, 0, 0.2, 1);
-                }
-                :scope > .imp-vt2 .imp-vt2-btn:hover svg,
-                :scope > .imp-vt2 .imp-vt2-btn:hover .imp-vt2-lbl {
-                  color: oklch(0.25 0.015 230);
-                }
-                :scope > .imp-vt2 .imp-vt2-btn.active svg {
-                  color: oklch(0.55 0.105 230);
-                }
-                :scope > .imp-vt2 .imp-vt2-btn.active .imp-vt2-lbl {
-                  color: oklch(0.55 0.105 230);
-                }
-                :scope > .imp-vt2 .imp-vt2-btn.active::after {
-                  background: oklch(0.55 0.105 230);
-                }
-              }
             `}</style>
-            <div data-impeccable-variant="1" data-impeccable-params='[{"id":"density","kind":"range","min":0.6,"max":1.4,"step":0.05,"default":1,"label":"Density"}]'>
-              <div className="imp-vt1">
-                <button
-                  onClick={() => setViewMode('grid')}
-                  className={`imp-vt1-btn ${viewMode === 'grid' ? 'active' : ''}`}
-                >
-                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
-                  </svg>
-                  Grid
-                </button>
-                <button
-                  onClick={() => setViewMode('list')}
-                  className={`imp-vt1-btn ${viewMode === 'list' ? 'active' : ''}`}
-                >
-                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                  </svg>
-                  List
-                </button>
-              </div>
-            </div>
-            <div data-impeccable-variant="2" style={{ display: 'none' }} data-impeccable-params='[{"id":"density","kind":"range","min":0.6,"max":1.4,"step":0.05,"default":1,"label":"Density"}]'>
-              <div className="imp-vt2">
-                <button
-                  onClick={() => setViewMode('grid')}
-                  className={`imp-vt2-btn ${viewMode === 'grid' ? 'active' : ''}`}
-                >
-                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
-                  </svg>
-                  <span className="imp-vt2-lbl">Grid</span>
-                </button>
-                <button
-                  onClick={() => setViewMode('list')}
-                  className={`imp-vt2-btn ${viewMode === 'list' ? 'active' : ''}`}
-                >
-                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                  </svg>
-                  <span className="imp-vt2-lbl">List</span>
-                </button>
-              </div>
-            </div>
             {/* impeccable-variants-end 60b63537 */}
           </div>
 
@@ -521,5 +418,3 @@ function CourierList() {
 }
 
 export default CourierList
-
-
